@@ -98,6 +98,7 @@ button:hover,
 button:focus {
 	background-color: var(--color-complementary);
 	box-shadow: var(--box-shadow);
+	cursor: pointer;
 }
 
 /* ----- HEADER ----- */
