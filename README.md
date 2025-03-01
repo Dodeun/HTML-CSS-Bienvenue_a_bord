@@ -8,10 +8,10 @@
 
 ## Voila mon approche pour la quete.
 
-J'ai tenté d'ajouter un maximum de commentaires si jamais vous voulez vous amuser à lire un peu le code, qui fait quoi, pourquoi j'ai fait certains choix.
+J'ai tenté d'ajouter un maximum de commentaires, au cas où vous voudriez vous amuser à lire un peu le code, qui fait quoi, et pourquoi j'ai fait certains choix.
 
-Je pense que j'ai encore besoin de faire des progres au niveau du nom de mes variables, je pense que c'est ok mais peut mieux faire.
+Je pense que j'ai encore besoin de progresser au niveau des noms de mes variables. Je pense que c'est ok, mais ça peut mieux faire.
 
-J'avais comme objectif d'utiliser peut de variables, et d'utiliser au maximum des calc d'une main variable pour garder une certaine coherence. (Par exemple si je decide d'augmenter mon spacing, tout les spacings vont s'ajuster pour garder un peu pret les memes ratios que la maquette ).
+Mon objectif était d'utiliser peu de variables et d'utiliser au maximum des calculs à partir d'une seule variable pour garder une certaine cohérence. (Par exemple, si je décide d'augmenter mon spacing, tous les espacements vont s'ajuster pour garder à peu près les mêmes ratios que la maquette).
 
-Je suis satisfait de mon travail et je considere mon objectif rempli, si c'etait a refaire j'aurais quand meme utiliser peut etre un peu plus de variables, il y a des calc qui parfois perdent un peu de sens et auraient merités leur variable.
+Je suis satisfait de mon travail et je considère mon objectif rempli. Si c'était à refaire, j'aurais quand même utilisé peut-être un peu plus de variables. Il y a des calculs qui, parfois, perdent un peu de sens et qui auraient mérité d'avoir leur propre variable.
