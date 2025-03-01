@@ -4,9 +4,9 @@
 
 ## Goal
 
-![Design mobile](/design/html-css-quest-mandatory-1-mobile.png)
+![Design mobile](/design/html-css-quest-mandatory-1-mobile.png =100x100)
 
-![Design desktop](/design/html-css-quest-mandatory-1-desktop.png)
+![Design desktop](/design/html-css-quest-mandatory-1-desktop.png | width=100)
 
 ## Voila mon approche pour la quete.
 
