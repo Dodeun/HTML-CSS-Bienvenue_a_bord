@@ -1,0 +1,257 @@
+/* IMPORTS */
+
+/* RESET */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* ----- GENERALE - Design mobile first ----- */
+
+html {
+	font-size: var(--font-size);
+}
+
+body {
+	font-family: var(
+		--font-paragraph
+	); /* Source Sans 3 applied to all the text of the page */
+	background-color: var(--bg-color-primary);
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(
+		--font-title
+	); /* Montserrat applied to all the titles of the page */
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2,
+h3 {
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.5rem;
+	color: var(--color-primary);
+	margin-bottom: var(--spacing);
+}
+
+h3 {
+	font-size: 2rem;
+	font-weight: var(--font-weight-medium);
+}
+
+button {
+	background-color: var(--color-primary);
+	width: fit-content; /* being a flex item it becomes display block and take 100% width of the container, this will make the button take the width of its content */
+	color: var(--color-header);
+	font-weight: var(--font-weight-medium);
+	font-size: 0.8rem;
+	padding: var(--spacing-btn) calc(var(--spacing-btn) * 3);
+	border: none;
+	border-radius: var(--border-radius-btn);
+	transition: var(--transition);
+}
+
+button:hover,
+button:focus {
+	background-color: var(--color-complementary);
+	box-shadow: var(--box-shadow);
+}
+
+/* ----- HEADER ----- */
+
+header {
+	display: flex; /* This will allow me to move the hero to occupy the space in the header  */
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: var(--color-primary);
+	height: var(
+		--height-header
+	); /* we want the header to take 50% of the height of the screen */
+	padding: calc(var(--spacing) / 2) var(--spacing);
+	color: var(--color-header);
+}
+
+/* navbar */
+
+.navbar {
+	display: flex; /* Flexing is not mandatory here but it will make the responsive easier later */
+	flex-direction: column;
+	align-items: center;
+	gap: calc(
+		var(--spacing) / 2
+	); /* I want the padding between the logo and nav to be half of the padding of my variable */
+}
+
+.logo {
+	width: var(--width-logo);
+	height: auto;
+}
+
+nav ul {
+	display: flex; /* on met les liens sur la même ligne */
+	gap: calc(var(--spacing) * 2);
+}
+
+nav a {
+	font-size: calc(
+		var(--font-size) * 1.4
+	); /* This is used to increase the font size of the nav links a bit to be closer to the design */
+	font-weight: var(--font-weight-medium); /* Bold looked to fat */
+}
+
+nav a:hover,
+nav a:focus {
+	opacity: 0.8;
+	text-decoration: underline;
+}
+
+/* hero */
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	min-height: 0; /* don't ask me why, the block becomes bigger than it's flexed parent without this */
+}
+
+.img-container {
+	height: 100%;
+	background-color: var(
+		--bg-color-primary
+	); /* not sure why I need this, maybe because it's a circle, a small gap appears between the img and the border without it */
+	padding: 2px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: var(--spacing);
+	min-height: 0; /* don't ask me why, the block becomes bigger than it's flexed parent without this */
+	transition: transform 0.5s ease-out; /* small animation for desktop */
+}
+
+.img-container img {
+	height: 100%;
+}
+
+/* ----- MAIN ----- */
+
+main {
+	padding: var(--spacing);
+}
+
+/* articles */
+
+.articles-container {
+	display: flex; /* ground work to make the responsive easier */
+	flex-direction: column;
+	align-items: center; /* center the cards */
+	gap: var(--spacing);
+	margin-bottom: var(--spacing);
+}
+
+.article-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: calc(var(--spacing) / 1.5);
+	max-width: min(var(--length-card), 100%);
+	aspect-ratio: 1 / 1; /* I want the cards to be square */
+	padding: calc(var(--spacing) / 1.5) var(--spacing); /* I want the padding to be half of the spacing on the top, and normal on the sides */
+	background-color: var(--bg-color-secondary);
+	border-radius: var(--border-radius);
+}
+
+.article-card img {
+	object-fit: contain; /* Keep the full image in the card and keep the ratio */
+	min-height: 0; /* don't ask me why, the block becomes bigger than it's flexed parent without this */
+	height: 100%;
+}
+
+/* about */
+
+.about {
+	display: flex; /* to center everyting on the page, maybe using margin auto was better */
+	flex-direction: column;
+	align-items: center;
+}
+
+.about p {
+	margin-bottom: var(--spacing);
+	max-width: var(--max-width-paragraphs);
+}
+
+.about p:last-of-type {
+	margin-bottom: calc(
+		var(--spacing) * 2
+	); /* I want the last paragraph to have a bigger margin to separate it more from the foother */
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+	background-color: var(--bg-color-secondary);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: var(--spacing);
+	font-size: 1.1rem;
+}
+
+footer span {
+	color: var(--color-heart);
+}
+
+footer a {
+	color: var(--color-primary);
+}
+
+footer a:hover,
+footer a:focus {
+	color: var(--color-complementary);
+	text-decoration: underline;
+}

@@ -1,0 +1,29 @@
+/* FONTS */
+
+/* Montserrat for titles (h1 to h3) and Source sans 3 for paragraphs and links*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+/* VARIABLES */
+:root {
+	--font-title: "Montserrat", sans-serif;
+	--font-paragraph: "Source Sans 3", sans-serif;
+	--font-size: 14px;
+	--color-primary: #a306b6;
+	--color-complementary: #19b606;
+	--color-header: white;
+	--color-heart: red;
+	--bg-color-primary: white;
+	--bg-color-secondary: #d9d9d9;
+	--height-header: 50vh;
+	--spacing: 1.5rem;
+	--width-logo: 5rem;
+	--font-weight-medium: 600;
+	--border-radius: 0.5rem;
+	--length-card: 300px;
+	--spacing-btn: 0.65rem;
+	--border-radius-btn: 1rem;
+	--box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	--transition: all 0.1s ease-in-out;
+	--width-hero-desktop: 700px;
+	--max-width-paragraphs: 480px;
+}

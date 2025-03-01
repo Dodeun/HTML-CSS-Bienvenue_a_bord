@@ -1,0 +1,72 @@
+/* ----- GENERAL ----- */
+
+h1 {
+	font-size: calc(var(--font-size) * 3);
+}
+
+h2 {
+	font-size: calc(var(--font-size) * 2.5);
+	margin-bottom: calc(var(--spacing) * 2);
+}
+
+/* ----- HEADER ----- */
+
+header {
+	padding: calc(var(--spacing) / 2);
+}
+
+header:hover .img-container {
+	transform: scale(1.2);
+}
+
+/* navbar */
+
+.navbar {
+	flex-direction: row; /* now we want our nav to be horizontal */
+	justify-content: space-between;
+}
+
+.logo {
+	width: calc(
+		var(--width-logo) * 0.8
+	); /* small adjustments to fit the design */
+}
+
+nav {
+	margin-right: calc(var(--spacing) * 2);
+}
+
+nav a {
+	font-size: calc(var(--font-size) * 1.1);
+	margin-left: var(--spacing);
+}
+
+/* hero */
+
+.hero {
+	flex-direction: row-reverse; /* we want the image to be on the right side */
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 100%;
+	max-width: var(--width-hero-desktop); /* to respect the design */
+	padding: calc(var(--spacing) * 2) 0;
+}
+
+/* ----- MAIN ----- */
+
+main {
+	padding: calc(var(--spacing) * 2);
+}
+
+/* articles */
+
+.articles-container {
+	flex-direction: row; /* we want the articles to be next to each other */
+	justify-content: center;
+	gap: var(--spacing);
+	margin-bottom: calc(var(--spacing) * 4);
+}
+
+.article-card {
+	min-height: 0; /* don't ask me why i have to put it again, the block becomes bigger than it's flexed parent without this */
+}
