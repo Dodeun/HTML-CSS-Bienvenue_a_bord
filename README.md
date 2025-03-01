@@ -1,10 +1,12 @@
 
 
-#Quete: Dévelopmment Web => HTML & CSS 1 : Bienvenu à bord
+# Quete: Dévelopmment Web => HTML & CSS 1 : Bienvenu à bord
 
 [WEBSITE](https://dodeun.github.io/HTML-CSS-Bienvenue_a_bord/)
 
-Voila mon approche pour la quete.
+## Goal
+
+## Voila mon approche pour la quete.
 
 N'hesitez pas a changer la largeur du viewport mais aussi sa hauteur !
 
