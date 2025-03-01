@@ -4,7 +4,7 @@
 
 ## Goal
 
-![Design mobile](/design/html-css-quest-mandatory-1-mobile.png =100x100)
+<img src="/design/html-css-quest-mandatory-1-mobile.png" alt="Mobile Design" width="100")>
 
 ![Design desktop](/design/html-css-quest-mandatory-1-desktop.png | width=100)
 
