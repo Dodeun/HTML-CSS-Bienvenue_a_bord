@@ -6,7 +6,7 @@
 
 J'ai tenté d'ajouter un maximum de commentaires, au cas où vous voudriez vous amuser à lire un peu le code, qui fait quoi, et pourquoi j'ai fait certains choix.
 
-Je pense que j'ai encore besoin de progresser au niveau des noms de mes variables. Je pense que c'est ok, mais ça peut mieux faire.
+Je pense que j'ai encore besoin de progresser au niveau des noms de mes variables. Je pense que c'est ok, mais peut mieux faire.
 
 Mon objectif était d'utiliser peu de variables et d'utiliser au maximum des calculs à partir d'une seule variable pour garder une certaine cohérence. (Par exemple, si je décide d'augmenter mon spacing, tous les espacements vont s'ajuster pour garder à peu près les mêmes ratios que la maquette).
 
