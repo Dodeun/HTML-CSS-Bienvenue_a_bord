@@ -1,106 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- This is where i put all my --variables: X -->
-    <link rel="stylesheet" href="variables.css" />
-    <!-- my main css file -->
-    <link rel="stylesheet" href="styles.css" />
-    <!-- media query for screens larger than 992px -->
-    <link
-      rel="stylesheet"
-      href="responsive-largescreen.css"
-      media="only screen and (min-width: 992px)"
-    />
-    <!-- Don't forget to add description for SEO -->
-    <meta
-      name="description"
-      content="Formations aux métiers de la tech et de l'I.A pour être Développeur Web, Data Analyst, Technicien informatique... en formations intensives ou alternance."
-    />
-    <title>Wild Code School</title>
-  </head>
-  <body>
-    <!------------------------------------ HEADER ------------------------------------>
-    <header>
-      <!-- I group the logo and nav together  -->
-      <div class="navbar">
-        <img src="assets/images/logo.svg" alt="wild Code School" class="logo" />
-        <nav>
-          <ul>
-            <li><a href="#">Articles</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-      <!-- the avatar and message is grouped together like a hero -->
-      <section class="hero">
-        <div class="img-container">
-          <img src="assets/images/avatar.png" alt="Avatar" class="avatar" />
-        </div>
-        <h1>Welcome <br />on board!</h1>
-        <!-- I still don't know if forcing the title on 2 lines would be better in css using max-width or this way -->
-      </section>
-    </header>
-    <!------------------------------------ MAIN ------------------------------------>
-    <main>
-      <section>
-        <h2>Recent articles</h2>
-        <!-- I group the articles together -->
-        <div class="articles-container">
-          <!-- one card represent one article -->
-          <article class="article-card">
-            <img src="assets/images/responsive.png" alt="" />
-            <h3>Responsive</h3>
-            <button>READ</button>
-          </article>
-          <article class="article-card">
-            <img src="assets/images/scalable.png" alt="" />
-            <h3>Scalable</h3>
-            <button>READ</button>
-          </article>
-          <article class="article-card">
-            <img src="assets/images/inclusive.png" alt="" />
-            <h3>Inclusive</h3>
-            <button>READ</button>
-          </article>
-        </div>
-      </section>
-      <section id="about" class="about">
-        <h2>About</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
-          mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
-          mattis ligula consectetur, ultricies mauris. Maecenas vitae mattis
-          tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non
-          suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at
-          maximus ante fermentum sit amet. Pellentesque commodo luctus a sociis
-          sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat
-          placerat. In iaculis arcu eros, eu tempus orci facilisis id.Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <p>
-          Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-          sapien fringilla, mattis ligula consectetur, ultricies mauris.
-          Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum
-          auctor ornare leo, non suscipit magna interdum eu. Curabitur
-          pellentesque nibh nibh, at maximus ante fermentum sit amet.
-          Pellentesque commodo luctus a sociis sodales. Quisque sagittis orci ut
-          diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eu
-          tempus orci facilisis id.Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit.
-        </p>
-      </section>
-    </main>
-    <!------------------------------------ FOOTER ------------------------------------>
-    <footer>
-      <small>&copy; 2024 Wild Code School</small>
-      <small>Made with <span>&heartsuit;</span> by wilders</small>
-      <small
-        >Image
-        <a href="https://www.freepik.com/" target="_blank">freepicks</a></small
-      >
-    </footer>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- This is where i put all my --variables: X -->
+		<link rel="stylesheet" href="variables.css" />
+		<!-- my main css file -->
+		<link rel="stylesheet" href="styles.css" />
+		<!-- media query for screens larger than 992px -->
+		<link
+			rel="stylesheet"
+			href="responsive-largescreen.css"
+			media="only screen and (min-width: 992px)"
+		/>
+		<!-- Don't forget to add description for SEO -->
+		<meta
+			name="description"
+			content="Formations aux métiers de la tech et de l'I.A pour être Développeur Web, Data Analyst, Technicien informatique... en formations intensives ou alternance."
+		/>
+		<title>Wild Code School</title>
+	</head>
+	<body>
+		<!------------------------------------ HEADER ------------------------------------>
+		<header>
+			<!-- I group the logo and nav together  -->
+			<div class="navbar">
+				<img src="assets/images/logo.svg" alt="wild Code School" class="logo" />
+				<nav>
+					<ul>
+						<li><a href="#articles">Articles</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!-- the avatar and message is grouped together like a hero -->
+			<section class="hero">
+				<div class="img-container">
+					<img src="assets/images/avatar.png" alt="Avatar" class="avatar" />
+				</div>
+				<h1>Welcome <br />on board!</h1>
+				<!-- I still don't know if forcing the title on 2 lines would be better in css using max-width or this way -->
+			</section>
+		</header>
+		<!------------------------------------ MAIN ------------------------------------>
+		<main>
+			<section id="articles">
+				<h2>Recent articles</h2>
+				<!-- I group the articles together -->
+				<div class="articles-container">
+					<!-- one card represent one article -->
+					<article class="article-card">
+						<img
+							src="assets/images/responsive.png"
+							alt="Icon representing responsivity"
+						/>
+						<h3>Responsive</h3>
+						<button>READ</button>
+					</article>
+					<article class="article-card">
+						<img
+							src="assets/images/scalable.png"
+							alt="Icon representing scalability"
+						/>
+						<h3>Scalable</h3>
+						<button>READ</button>
+					</article>
+					<article class="article-card">
+						<img
+							src="assets/images/inclusive.png"
+							alt="Icon representing inclusivity"
+						/>
+						<h3>Inclusive</h3>
+						<button>READ</button>
+					</article>
+				</div>
+			</section>
+			<section id="about" class="about">
+				<h2>About</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
+					mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
+					mattis ligula consectetur, ultricies mauris. Maecenas vitae mattis
+					tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non
+					suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at
+					maximus ante fermentum sit amet. Pellentesque commodo luctus a sociis
+					sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat
+					placerat. In iaculis arcu eros, eu tempus orci facilisis id.Lorem
+					ipsum dolor sit amet, consectetur adipiscing elit.
+				</p>
+				<p>
+					Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
+					sapien fringilla, mattis ligula consectetur, ultricies mauris.
+					Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum
+					auctor ornare leo, non suscipit magna interdum eu. Curabitur
+					pellentesque nibh nibh, at maximus ante fermentum sit amet.
+					Pellentesque commodo luctus a sociis sodales. Quisque sagittis orci ut
+					diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eu
+					tempus orci facilisis id.Lorem ipsum dolor sit amet, consectetur
+					adipiscing elit.
+				</p>
+			</section>
+		</main>
+		<!------------------------------------ FOOTER ------------------------------------>
+		<footer>
+			<small>&copy; 2024 Wild Code School</small>
+			<small>Made with <span>&heartsuit;</span> by wilders</small>
+			<small
+				>Image
+				<a href="https://www.freepik.com/" target="_blank">freepicks</a></small
+			>
+		</footer>
+	</body>
 </html>

@@ -82,25 +82,6 @@ h3 {
 	font-weight: var(--font-weight-medium);
 }
 
-button {
-	background-color: var(--color-primary);
-	width: fit-content; /* being a flex item it becomes display block and take 100% width of the container, this will make the button take the width of its content */
-	color: var(--color-header);
-	font-weight: var(--font-weight-medium);
-	font-size: 0.8rem;
-	padding: var(--spacing-btn) calc(var(--spacing-btn) * 3);
-	border: none;
-	border-radius: var(--border-radius-btn);
-	transition: var(--transition);
-}
-
-button:hover,
-button:focus {
-	background-color: var(--color-complementary);
-	box-shadow: var(--box-shadow);
-	cursor: pointer;
-}
-
 /* ----- HEADER ----- */
 
 header {
@@ -162,9 +143,7 @@ nav a:focus {
 
 .img-container {
 	height: 100%;
-	background-color: var(
-		--bg-color-primary
-	); /* not sure why I need this, maybe because it's a circle, a small gap appears between the img and the border without it */
+	background-color: var(--bg-color-primary);
 	padding: 2px;
 	border-radius: 50%;
 	display: flex;
@@ -208,9 +187,27 @@ main {
 }
 
 .article-card img {
-	object-fit: contain; /* Keep the full image in the card and keep the ratio */
 	min-height: 0; /* don't ask me why, the block becomes bigger than it's flexed parent without this */
 	height: 100%;
+}
+
+button {
+	background-color: var(--color-primary);
+	width: fit-content; /* being a flex item it becomes display block and take 100% width of the container, this will make the button take the width of its content */
+	color: var(--color-header);
+	font-weight: var(--font-weight-medium);
+	font-size: 0.8rem;
+	padding: var(--spacing-btn) calc(var(--spacing-btn) * 3);
+	border: none;
+	border-radius: var(--border-radius-btn);
+	transition: var(--transition);
+}
+
+button:hover,
+button:focus {
+	background-color: var(--color-complementary);
+	box-shadow: var(--box-shadow);
+	cursor: pointer;
 }
 
 /* about */
