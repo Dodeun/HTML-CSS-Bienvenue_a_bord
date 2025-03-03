@@ -52,6 +52,10 @@ nav a {
 	padding: calc(var(--spacing) * 2) 0;
 }
 
+.img-container img {
+	height: 260px;
+}
+
 /* ----- MAIN ----- */
 
 main {
@@ -65,8 +69,4 @@ main {
 	justify-content: center;
 	gap: var(--spacing);
 	margin-bottom: calc(var(--spacing) * 4);
-}
-
-.article-card {
-	min-height: 0; /* don't ask me why i have to put it again, the block becomes bigger than it's flexed parent without this */
 }
